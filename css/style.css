@@ -9,6 +9,7 @@
 
 body {
   font-family: "souvenir_gothic_becker_ant_Rg";
+  color: #495f74;
 }
 
 header {
@@ -17,10 +18,17 @@ header {
 
 .logomarca {
   position: fixed;
-  left: -350px;
-  top: -35px;
+  left: 50px;
+  top: 50px;
   z-index: 10;
-  width: 800px;
+  width: 150px;
+}
+
+.clube-assinantes {
+  position: absolute;
+  z-index: 10;
+  left: calc(50vw - 100px);
+  width: 200px;
 }
 
 .whatsapp {
@@ -158,14 +166,23 @@ header {
   height: 50vh;
 }
 
+.vh70 {
+  height: 70vh;
+  min-height: 650px;
+}
+
 .vh10 {
   height: 10vh;
 }
 
-.img-section,
+.container-img-section,
 .container-txt-section {
   width: 350px;
   height: auto;
+}
+
+.container-txt-section {
+  width: 450px;
 }
 
 .container-img-section,
@@ -174,4 +191,95 @@ header {
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  margin: 0 60px;
+}
+
+.al-esquerda {
+  align-items: flex-start;
+}
+
+.al-direta {
+  align-items: flex-end;
+}
+
+.img-section {
+  width: 100%;
+}
+
+#mar-casa {
+  display: flex;
+  position: relative;
+}
+
+.stiker {
+  position: absolute;
+  right: 10vw;
+  top: -205px;
+  z-index: 5;
+  transform: rotate(20deg);
+  width: 250px;
+}
+
+.mar-header {
+  width: 45vw;
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.mar-maior {
+  font-size: 1.35em;
+}
+
+.mar-text {
+  width: 55vw;
+  padding-left: 75px;
+}
+
+.mar-text > .mar-paragrafo {
+  width: 650px;
+  text-align: justify;
+  line-height: 2em;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+}
+
+.legenda {
+  width: 100%;
+  height: 100px;
+  background-color: #495f74;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.botao-receba {
+  background-color: #495f74;
+  color: #fff;
+  cursor: pointer;
+  width: 170px;
+  height: 70px;
+  text-align: center;
+  letter-spacing: 2px;
+  border: none;
+}
+
+.descricao {
+  font-size: 3.2em;
+}
+
+.divisao-premio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-premio {
+  width: 15vw;
+  margin: 0.5vh;
 }
