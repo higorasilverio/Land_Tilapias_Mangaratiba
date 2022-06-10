@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "souvenir_gothic_becker_ant_Rg";
+  src: url("souvenir-gothic-becker-ant-demi-webfont.woff2") format("woff2"),
+    url("souvenir-gothic-becker-ant-demi-webfont.woff") format("woff"),
+    url("souvenir-gothic-becker-ant-demi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "souvenir_gothic_becker_ant_Rg";
+}
+
+header {
+  background-color: #ef6c3c;
+}
+
+.logomarca {
+  position: fixed;
+  left: -350px;
+  top: -35px;
+  z-index: 10;
+  width: 800px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+  width: 60px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links-sociais {
+  margin: 50px 20px 20px;
+  width: 30px;
+}
+
+.ultimo-link-social {
+  margin: 50px 50px 20px 20px;
+}
+
+.container-mar {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.container-luz-solar {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+}
+
+.img-luz-solar {
+  width: 100%;
+  position: relative;
+  bottom: 6vw;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.container-sol {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 4;
+}
+
+.img-sol {
+  width: 34vw;
+  position: relative;
+  bottom: -5vw;
+  left: 0;
+  right: 0;
+  margin: 0 33vw;
+  z-index: 4;
+}
+
+.container-passaro {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 4;
+}
+
+.img-passaro {
+  width: 40vw;
+  position: relative;
+  bottom: -5vw;
+  left: 0;
+  right: 0;
+  margin: 0 33vw;
+  z-index: 4;
+}
+
+.img-mar {
+  width: 100%;
+  position: relative;
+  bottom: -10vw;
+  z-index: 5;
+}
