@@ -16,6 +16,19 @@
   <script>
     $(document).ready(function () {
 
+      function balancoMar() {
+        $(".img-mar").animate({ bottom: '-8.7vw' }, 1000, 'linear', function () {
+          $(".img-mar").animate({ bottom: '-9vw' }, 1000, 'linear', function () {
+            $(".img-mar").animate({ bottom: '-9.3vw' }, 1000, 'linear', function () {
+              $(".img-mar").animate({ bottom: '-9vw' }, 1000, 'linear', function () {
+                balancoMar();
+              });
+            });
+          });
+        });
+      }
+      balancoMar();
+
       var posicaoSolPx = $('.img-sol').css("bottom");
       var tamanhoPosicaoSol = posicaoSolPx.split('').length;
       var posicaoSolAbsoluta = parseFloat(posicaoSolPx.split('').splice(1, tamanhoPosicaoSol - 3).join(''));
