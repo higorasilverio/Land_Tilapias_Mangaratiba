@@ -6,15 +6,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <script src="js/jquery-3.6.0.js"></script>
+
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
 
   <title>Tilápias Mangaratiba</title>
+
+  <script>
+    $(document).ready(function () {
+
+      var posicaoSolPx = $('.img-sol').css("bottom");
+      var tamanhoPosicaoSol = posicaoSolPx.split('').length;
+      var posicaoSolAbsoluta = parseFloat(posicaoSolPx.split('').splice(1, tamanhoPosicaoSol - 3).join(''));
+
+      $(window).scroll(function () {
+        var alturaTela = $(window).height();
+        var posicaoTela = $(window).scrollTop();
+        if (posicaoTela < alturaTela / 2) {
+          var velocidadeScroll = posicaoTela / 2.8;
+          if (alturaTela > 700) {
+            velocidadeScroll = posicaoTela / 1.8;
+          }
+          var novaPosicaoSolPx = ((posicaoSolAbsoluta + velocidadeScroll) * -1).toString().concat('px');
+          $('.img-sol').css("bottom", novaPosicaoSolPx)
+        }
+      });
+
+    });
+  </script>
+
 </head>
 
 <body>
 
-  <img class="logomarca" src="icons/logomarca-tilapias.svg" alt="Logomarca Tilápias Mangaratiba" />
+  <img class="logomarca" src="icons/logomarca-tilapias.svg" alt="Logomarca Tilapias Mangaratiba" />
   <img class="clube-assinantes" src="icons/clubedeassinantes.svg" alt="Logomarca Clube de Assinantes" />
   <a href="https://api.whatsapp.com/send?phone=5521983188022" target="_blank">
     <img class="whatsapp" src="icons/iconmonstr-whatsapp-4.svg" alt="Whatsapp logo" />
@@ -48,7 +74,7 @@
           <img class="img-sol" src="images/sol.png" alt="Sol" />
         </div>
         <div class="container-passaro">
-          <img class="img-passaro bounce-1" src="icons/passaro-topo.svg" alt="Pássaro" />
+          <img class="img-passaro bounce-1" src="icons/passaro-topo.svg" alt="Passaro" />
         </div>
         <img class="img-mar" src="images/mar.png" alt="Mar" />
       </div>
@@ -92,7 +118,7 @@
       <button class="botao-receba">Receba já!</button>
     </div>
     <div class="container-img-section">
-      <img class="img-section" src="images/josue-michel-OMl0o6TSQXU-unsplash.jpg" alt="Plano fitness">
+      <img class="img-section" src="images/josue-michel-OMl0o6TSQXU-unsplash.jpg" alt="Plano familia">
       <div class="legenda">
         Plano família
       </div>
@@ -101,7 +127,7 @@
 
   <section id="sob-medida" class="bg-fc vh70 central">
     <div class="container-img-section">
-      <img class="img-section" src="images/pexels-ketut-subiyanto-4246179.jpg" alt="Plano fitness">
+      <img class="img-section" src="images/pexels-ketut-subiyanto-4246179.jpg" alt="Caixa sob medida">
       <div class="legenda">
         Caixa sob medida
       </div>
@@ -115,11 +141,11 @@
   <section id="premios" class="bg-fc central collun">
     <h4 style="font-size: 2em;">Sua assinatura vale pontos que você pode trocar por prêmios</h4>
     <div class="divisao-premio">
-      <img class="img-premio" src="images/chinelo.jpg" alt="Plano fitness">
-      <img class="img-premio" src="images/eco-bag.jpg" alt="Plano fitness">
-      <img class="img-premio" src="images/bolsa-terminca.jpg" alt="Plano fitness">
-      <img class="img-premio" src="images/faqueiro.jpg" alt="Plano fitness">
-      <img class="img-premio" src="images/panela.jpg" alt="Plano fitness">
+      <img class="img-premio" src="images/chinelo.jpg" alt="Premio chinelo">
+      <img class="img-premio" src="images/eco-bag.jpg" alt="Premio ecobag">
+      <img class="img-premio" src="images/bolsa-terminca.jpg" alt="Premio bolsa termica">
+      <img class="img-premio" src="images/faqueiro.jpg" alt="Premio faqueiro">
+      <img class="img-premio" src="images/panela.jpg" alt="Premio panela">
     </div>
   </section>
 
