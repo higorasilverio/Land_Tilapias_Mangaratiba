@@ -177,7 +177,7 @@ h5 {
 
 .meio.min-meio {
   min-height: 50vh;
-  padding: 3vh 0;
+  padding: 40px 0;
 }
 
 .vh70 {
@@ -231,11 +231,11 @@ h5 {
 
 .stiker {
   position: absolute;
-  right: 10vw;
-  top: -205px;
+  right: 20vw;
+  top: -121px;
   z-index: 5;
   transform: rotate(20deg);
-  width: 250px;
+  width: 180px;
 }
 
 .mar-header {
