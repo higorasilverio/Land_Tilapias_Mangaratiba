@@ -6,49 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="js/jquery-3.6.0.js"></script>
-
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
 
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+
   <title>Tilápias Mangaratiba</title>
-
-  <script>
-    $(document).ready(function () {
-
-      function balancoMar() {
-        $(".img-mar").animate({ bottom: '-8.7vw' }, 1000, 'linear', function () {
-          $(".img-mar").animate({ bottom: '-9vw' }, 1000, 'linear', function () {
-            $(".img-mar").animate({ bottom: '-9.3vw' }, 1000, 'linear', function () {
-              $(".img-mar").animate({ bottom: '-9vw' }, 1000, 'linear', function () {
-                balancoMar();
-              });
-            });
-          });
-        });
-      }
-      balancoMar();
-
-      var posicaoSolPx = $('.img-sol').css("bottom");
-      var tamanhoPosicaoSol = posicaoSolPx.split('').length;
-      var posicaoSolAbsoluta = parseFloat(posicaoSolPx.split('').splice(1, tamanhoPosicaoSol - 3).join(''));
-
-      $(window).scroll(function () {
-        var alturaTela = $(window).height();
-        var posicaoTela = $(window).scrollTop();
-        if (posicaoTela < alturaTela / 2) {
-          var velocidadeScroll = posicaoTela / 2.8;
-          if (alturaTela > 700) {
-            velocidadeScroll = posicaoTela / 1.8;
-          }
-          var novaPosicaoSolPx = ((posicaoSolAbsoluta + velocidadeScroll) * -1).toString().concat('px');
-          $('.img-sol').css("bottom", novaPosicaoSolPx)
-        }
-      });
-
-    });
-  </script>
-
 </head>
 
 <body>
@@ -156,15 +120,20 @@
     </div>
   </section>
 
-  <section id="premios" class="bg-fc central collun">
-    <h4>Sua assinatura vale pontos que você pode trocar por prêmios</h4>
-    <div class="divisao-premio">
-      <img class="img-premio" src="images/chinelo.jpg" alt="Premio chinelo">
-      <img class="img-premio" src="images/eco-bag.jpg" alt="Premio ecobag">
-      <img class="img-premio" src="images/bolsa-terminca.jpg" alt="Premio bolsa termica">
-      <img class="img-premio" src="images/faqueiro.jpg" alt="Premio faqueiro">
-      <img class="img-premio" src="images/panela.jpg" alt="Premio panela">
+  <section id="premios" class="bg-fc" style="overflow: hidden;">
+    <div style="width: 100%; text-align: center;">
+      <h4>Sua assinatura vale pontos que você pode trocar por prêmios</h4>
     </div>
+    <div style="width: 100%; text-align: center;">
+      <div class="slider premios-slider" style="width: 1300px; margin-left: auto; margin-right: auto;">
+        <img class="img-premio" src="images/chinelo.jpg" alt="Premio chinelo">
+        <img class="img-premio" src="images/eco-bag.jpg" alt="Premio ecobag">
+        <img class="img-premio" src="images/bolsa-terminca.jpg" alt="Premio bolsa termica">
+        <img class="img-premio" src="images/faqueiro.jpg" alt="Premio faqueiro">
+        <img class="img-premio" src="images/panela.jpg" alt="Premio panela">
+      </div>
+    </div>
+
   </section>
 
   <footer class="bg-fc vh10 central footer">
@@ -187,6 +156,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/code.js"></script>
 </body>
 
 </html>
