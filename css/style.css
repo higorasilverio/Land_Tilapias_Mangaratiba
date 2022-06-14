@@ -119,13 +119,10 @@ h5 {
   animation-duration: 3s;
   animation-iteration-count: infinite;
 
-  width: 40vw;
+  width: 12vw;
   position: relative;
-  bottom: -5vw;
-  left: 0;
-  right: 0;
-  margin: 0 33vw;
   z-index: 4;
+  margin: 20vh 0 0 44vw;
 }
 
 .bounce-1 {
