@@ -223,6 +223,13 @@ h5 {
   width: 100%;
 }
 
+.texto-principal {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5vw;
+}
+
 #mar-casa {
   display: flex;
   position: relative;
@@ -283,6 +290,42 @@ h5 {
   border: none;
 }
 
+#youtube-video {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  padding-top: 50%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#premios {
+  overflow: hidden;
+}
+
+.tudo-premio {
+  width: 100%;
+  text-align: center;
+}
+
 .divisao-premio {
   display: flex;
   flex-direction: row;
@@ -295,6 +338,12 @@ h5 {
   width: 15vw;
   max-width: 320px;
   margin: 0.5vh;
+}
+
+.premios-slider {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mr40 {
