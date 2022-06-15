@@ -33,12 +33,13 @@ h5 {
   left: 50px;
   top: 50px;
   z-index: 10;
-  width: 150px;
+  width: 120px;
 }
 
 .clube-assinantes {
   position: absolute;
   z-index: 10;
+  top: -10px;
   left: calc(50vw - 100px);
   width: 200px;
 }
@@ -79,6 +80,7 @@ h5 {
   width: 100%;
   overflow: hidden;
   position: absolute;
+  top: 23vh;
   z-index: 3;
 }
 
@@ -95,6 +97,7 @@ h5 {
   width: 100%;
   overflow: hidden;
   position: absolute;
+  top: 10vh;
   z-index: 4;
 }
 
@@ -122,7 +125,7 @@ h5 {
   width: 12vw;
   position: relative;
   z-index: 4;
-  margin: 20vh 0 0 44vw;
+  margin: 38vh 0 0 44vw;
 }
 
 .bounce-1 {
@@ -145,7 +148,7 @@ h5 {
 .img-mar {
   width: 100%;
   position: relative;
-  bottom: -9vw;
+  bottom: -40vh;
   z-index: 5;
 }
 
@@ -235,16 +238,15 @@ h5 {
 }
 
 .mar-header {
-  width: 50vw;
   text-align: end;
   text-transform: uppercase;
   font-size: 2.5em;
-  margin-right: 40px;
 }
 
 .mar-text {
-  width: 50vw;
-  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mar-maior {
@@ -252,7 +254,6 @@ h5 {
 }
 
 .mar-text > .mar-paragrafo {
-  width: 70%;
   text-align: justify;
   line-height: 2em;
   letter-spacing: 2px;

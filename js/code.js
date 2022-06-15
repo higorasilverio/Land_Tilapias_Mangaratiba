@@ -1,14 +1,14 @@
 $(document).ready(function () {
   function balancoMar() {
-    $(".img-mar").animate({ bottom: "-8.7vw" }, 1000, "linear", function () {
-      $(".img-mar").animate({ bottom: "-9vw" }, 1000, "linear", function () {
+    $(".img-mar").animate({ bottom: "-39.7vh" }, 1000, "linear", function () {
+      $(".img-mar").animate({ bottom: "-40vh" }, 1000, "linear", function () {
         $(".img-mar").animate(
-          { bottom: "-9.3vw" },
+          { bottom: "-40.3vh" },
           1000,
           "linear",
           function () {
             $(".img-mar").animate(
-              { bottom: "-9vw" },
+              { bottom: "-40vh" },
               1000,
               "linear",
               function () {
@@ -34,7 +34,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var alturaTela = $(window).height();
     var posicaoTela = $(window).scrollTop();
-    if (posicaoTela < alturaTela / 2) {
+    if (posicaoTela < alturaTela / 1.2) {
       var velocidadeScroll = posicaoTela / 2.8;
       if (alturaTela > 700) {
         velocidadeScroll = posicaoTela / 1.8;
@@ -48,10 +48,8 @@ $(document).ready(function () {
 
   $(".premios-slider").slick({
     dots: true,
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
   });
 });
